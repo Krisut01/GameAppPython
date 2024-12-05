@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Programming Quiz Game</h1>
+        </header>
+
+        <!-- Difficulty Selection -->
+        <div id="difficulty-selection" class="difficulty-selection">
+            <h2>Select Difficulty Level</h2>
+            <div class="buttons">
+                <button class="difficulty-btn" onclick="startGame('easy')">Easy</button>
+                <button class="difficulty-btn" onclick="startGame('average')">Average</button>
+                <button class="difficulty-btn" onclick="startGame('hard')">Hard</button>
+            </div>
+        </div>
+
+        <!-- Game -->
+        <div id="game" class="game" style="display: none;">
+            <div id="question-container">
+                <h2 id="question-text">Welcome to the Programming Quiz!</h2>
+                <img id="question-image" src="" alt="Code snippet">
+            </div>
+            <div id="choices-container">
+                <button class="choice-btn" onclick="checkAnswer(this)">Choice 1</button>
+                <button class="choice-btn" onclick="checkAnswer(this)">Choice 2</button>
+                <button class="choice-btn" onclick="checkAnswer(this)">Choice 3</button>
+                <button class="choice-btn" onclick="checkAnswer(this)">Choice 4</button>
+            </div>
+            <div id="message"></div>  <!-- Message display area -->
+        </div>
+
+        <!-- Final Score Display -->
+        <div id="congrats" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="score"></p>
+            <button class="difficulty-btn" onclick="startGame('easy')">Play Again</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Shadow to create depth */
+}
+
+/* Header */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow to add depth */
+}
+
+/* Difficulty section */
+.difficulty-selection h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Difficulty buttons */
+.difficulty-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for 3D effect */
+    transition: all 0.3s ease;
+}
+
+.difficulty-btn:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+    transform: translateY(-4px); /* Lift effect on hover */
+}
+
+/* Game section */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Question text */
+#question-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Shadow for text depth */
+}
+
+/* Question image */
+#question-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow around the image */
+}
+
+/* Answer choices */
+.choice-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+    background-color: #1976D2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Shadow on hover */
+    transform: translateY(-4px); /* Lift effect */
+}
+
+.choice-btn:disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+    box-shadow: none; /* Remove shadow when disabled */
+}
+
+/* Message display */
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Congratulations section */
+#congrats {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Score display */
+#score {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2196F3;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
